@@ -50,8 +50,8 @@ public void deleteItem(giftRegistry toDelete) {
 
 public List<giftRegistry> showAllItems(){
 	EntityManager em = emfactory.createEntityManager();
-	List<giftRegistry> allItems = em.createQuery("SELECT i FROM giftRegistry i").getResultList();
-	return allItems;
+	List<giftRegistry> allGifts = em.createQuery("SELECT i FROM giftRegistry i").getResultList();
+	return allGifts;
 }
 
 public giftRegistry searchForItemById(int idToEdit) {

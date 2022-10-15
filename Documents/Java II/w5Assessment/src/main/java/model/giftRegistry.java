@@ -71,6 +71,8 @@ public giftRegistry(String gift, String name, String description) {
 		return "giftRegistry [id=" + id + ", gift=" + gift + ", name=" + name + ", description=" + description + "]";
 	}
 	
-	
+	public String returnItemDetails() {
+		return this.gift + this.name + this.description;
+	}
 	
 }
